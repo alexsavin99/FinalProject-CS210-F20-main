@@ -1,0 +1,79 @@
+/** changeMe.c
+* ==============================================================
+* Name: Your Name, Fall 2020
+* Section: 
+* Project: Final Project - name of your project
+* Description: 
+* Documentation Statement: I used the interntet to find how to return 
+* multiple values using 1 function and I dicovered I can return a struct.
+* ==============================================================
+* UserManual/Instructions:
+*   In order to use this programme you need to input different letters in
+* the console in order to find the word that was randomly selected when
+* you first ran the programme. If the letter you input is wrong the 
+* programme will start drowing a hanged man.
+ *
+ *  Bonus Features (upto 10 pts) - List here
+ *  1)
+ *  2)
+ *  3)
+ *
+ *  Required Programming Skills (must have 5 of 6):
+ *   1) Dynamic Memory Allocation
+ *          What you did to meet this req: xxx
+ *              File: (file where example is located)
+ *              Line#: (line in file where it is located)
+ *   2) Pointers
+ *          What you did to meet this req: xxx
+ *              File:
+ *              Line#:
+ *   3) File I/O
+ *          What you did to meet this req: input from the dictionary
+ *              File:finalfuncts.c
+ *              Line#:13-21
+ *   4) Structs
+ *          What you did to meet this req: created a struct to use for the output of the word
+ *              File: finalmain.c
+ *              Line#:1-6
+ *
+ *   5) String Manipulation
+ *          What you did to meet this req: the entire game is about string manipulation
+ *              File:finalfuncts.c
+ *              Line#:almost all of them
+ *
+ *   6) Processing of Array Data
+ *          What you did to meet this req: xxx
+ *              File:
+ *              Line#:
+ *
+ *  Required Advanced Programming Skills (1 or more):
+ *   1) Recursion
+ *          What you did to meet this req: used recursion to ask for input until it respects the format
+ *              File: finalfuncts.c
+ *              Line#: 42
+ *
+ *   2) 2D Dynamic Memory
+ *          What you did to meet this req: xxx
+ *              File:
+ *              Line#:
+ *
+ *   3) Graphics - Curses or Win32
+ *          What you did to meet this req: xxx
+ *              File:
+ *              Line#:
+ *
+ *   List any changes or omissions from stated shall requirements (from
+ *   your design) also describe any functionality that isn't working.
+ *      Requirement changes/omissions:
+ *          1)
+ *          2)
+ *          3)
+ *
+ *      Errors:
+ *          1)a value of type "int" cannot be used to initialize an entity of type "struct Words"
+ *          2)'initializing': cannot convert from 'int' to 'Words'
+ *
+ *   How many hours did you spend on this project: 20
+ *   How many lines of code did you write in total: 93 so far
+ *
+*/
