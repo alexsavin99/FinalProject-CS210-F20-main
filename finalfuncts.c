@@ -54,7 +54,7 @@ int occurance(char letter,char word[50]){
 void fill_blanks(int position, char letter){
     char line[50];
     FILE* inFile = NULL;
-    inFile = fopen("dictionary.txt", "r");
+    inFile = fopen("hangman.txt", "r");
     fscanf(inFile," %s", line);
     fclose(inFile);
     FILE* outFile = NULL;
@@ -66,6 +66,26 @@ void fill_blanks(int position, char letter){
     fprintf(outFile, " %c", letter);
     for (i=position+1;i<strlen(line);i++){
     fprintf(outFile, " %c", line[i]);
+    }
+    fclose(outFile);
+}
+void draw_hangman(int status){
+    FILE* outFile = NULL;
+    outFile = fopen("hangman.txt", "w");
+    if(status>=1){
+        fprintf(outFile, "  _\n / \\ \n|   |\n \\ /\n  _\n");
+    }
+    if(status>=2){
+        fprintf(outFile, "  |\n");
+    }
+    if(status>=3){
+        fprintf(outFile, " /|\\\n/ | \\\n  |  ");
+    }
+    if(status>=4){
+        fprintf(outFile, " / \\\n");
+    }
+    if(status>=5){
+        fprintf(outFile, "Game Over");
     }
     fclose(outFile);
 }
