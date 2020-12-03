@@ -42,16 +42,20 @@ char ask_letter(){
         ask_letter();
     }
 }
-int occurance(char letter,char word[50]){
+int * occurance(char letter,char word[50]){
     int i=0;
+    int o[50];
+    int j=0;
     for(i=0;i<strlen(word);i++){
         if (word[i]==letter){
-            return i;
+            o[j]=i;
+            j++;
         }
     }
- return -1;
+    o[j]=-1;
+ return o;
 }
-void fill_blanks(int position, char letter){
+void fill_blanks(int position[], char letter){
     char line[50];
     FILE* inFile = NULL;
     inFile = fopen("hangman.txt", "r");
@@ -59,13 +63,16 @@ void fill_blanks(int position, char letter){
     fclose(inFile);
     FILE* outFile = NULL;
     outFile = fopen("hangman.txt", "w");
+    int j=0;
     int i=1;
-    for (i=1;i<position;i++){
-        fprintf(outFile, " %c", line[i]);
-    }
-    fprintf(outFile, " %c", letter);
-    for (i=position+1;i<strlen(line);i++){
-    fprintf(outFile, " %c", line[i]);
+    while(position[j]!=-1){
+        for (i=1;i<position[j];i++){
+            fprintf(outFile, " %c", line[i]);
+        }
+        fprintf(outFile, " %c", letter);
+        for (i=position+1;i<strlen(line);i++){
+            fprintf(outFile, " %c", line[i]);
+        }
     }
     fclose(outFile);
 }
