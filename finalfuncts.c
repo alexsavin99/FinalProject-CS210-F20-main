@@ -65,6 +65,7 @@ void fill_blanks(int position[], char letter){
     outFile = fopen("hangman.txt", "w");
     int j=0;
     int i=1;
+
     while(position[j]!=-1){
         for (i=1;i<position[j];i++){
             fprintf(outFile, " %c", line[i]);
@@ -78,7 +79,7 @@ void fill_blanks(int position[], char letter){
 }
 void draw_hangman(int status){
     FILE* outFile = NULL;
-    outFile = fopen("hangman.txt", "w");
+    outFile = fopen("hangman.txt", "a");
     if(status>=1){
         fprintf(outFile, "  _\n / \\ \n|   |\n \\ /\n  _\n");
     }
