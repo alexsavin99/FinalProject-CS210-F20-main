@@ -24,9 +24,9 @@
  *              File: (file where example is located)
  *              Line#: (line in file where it is located)
  *   2) Pointers
- *          What you did to meet this req: xxx
- *              File:
- *              Line#:
+ *          What you did to meet this req: I used pointers to return an array from a function
+ *              File:finalmain.c
+ *              Line#:10
  *   3) File I/O
  *          What you did to meet this req: input from the dictionary
  *              File:finalfuncts.c
@@ -42,9 +42,9 @@
  *              Line#:almost all of them
  *
  *   6) Processing of Array Data
- *          What you did to meet this req: xxx
- *              File:
- *              Line#:
+ *          What you did to meet this req: returned all the positions of where a letter occured in the word using an array
+ *              File:finalfuncts.c
+ *              Line#:68
  *
  *  Required Advanced Programming Skills (1 or more):
  *   1) Recursion
