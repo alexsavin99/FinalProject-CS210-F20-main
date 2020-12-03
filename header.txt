@@ -74,6 +74,6 @@
  *          2)'initializing': cannot convert from 'int' to 'Words'
  *
  *   How many hours did you spend on this project: 30
- *   How many lines of code did you write in total: 93 so far
+ *   How many lines of code did you write in total: 133
  *
 */
