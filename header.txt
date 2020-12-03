@@ -1,11 +1,11 @@
 /** changeMe.c
 * ==============================================================
-* Name: Your Name, Fall 2020
-* Section: 
-* Project: Final Project - name of your project
-* Description: 
+* Name: Savin, Fall 2020
+* Section: M6A
+* Project: Final Project - Hangman
+* Description: Hangman game using the console for inputs and a file for outputs
 * Documentation Statement: I used the interntet to find how to return 
-* multiple values using 1 function and I dicovered I can return a struct.
+* multiple values of different types using 1 function and I dicovered I can return a struct.
 * ==============================================================
 * UserManual/Instructions:
 *   In order to use this programme you need to input different letters in
@@ -70,8 +70,8 @@
  *          3)
  *
  *      Errors:
- *          1)a value of type "int" cannot be used to initialize an entity of type "struct Words"
- *          2)'initializing': cannot convert from 'int' to 'Words'
+ *          1)'initializing': cannot convert from 'int' to 'Words'
+ *          2)
  *
  *   How many hours did you spend on this project: 30
  *   How many lines of code did you write in total: 133
